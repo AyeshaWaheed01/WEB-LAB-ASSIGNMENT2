@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Sigmar+One&family=Special+Elite&display=swap');
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: aquamarine;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav li + li {
+  margin-left: 15px;
+}
+
+.link-btn {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Special Elite', cursive;
+  transition: all 0.5s ease;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.active {
+  color: black;
+  background-color: #fff;
+}
+
+.logo {
+  color: orange;
+  font-family: 'Sigmar One', cursive;
+  font-size: 27px;
+  line-height: 1.5;
+  text-shadow: 1px 2px black;
+}
+
+@media (max-width: 750px) {
+  header {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  header > * + * {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  width: 100vh;
+}
+
+.calc-grid {
+  height: 500px;
+  width: 334px;
+  padding: 10px;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.sub-two {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 47px;
+}
+
+.output {
+  background-color: rgba(122, 122, 122, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 80px;
+  border-radius: 8px 8px 0 0;
+}
+
+.output > .pre-operand {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.output > .cur-operand {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+button {
+  border: 1px solid gray;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.orange {
+  background-color: orange;
+}
+
+@media (max-width: 750px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem;
+    padding: 0 10px;
+  }
+
+  .sub-two {
+    font-size: 29px;
+    text-align: center;
+  }
+}
